@@ -1,5 +1,3 @@
-/board/testing/
 .mypy_cache
 /module/__pycache__
 /module/.mypy_cache
-
