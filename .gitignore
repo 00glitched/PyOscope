@@ -1,4 +1,4 @@
-/.pyenv
+/.pyoscvenv
 .mypy_cache
 /module/__pycache__
 /module/.mypy_cache
