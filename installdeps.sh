@@ -1,5 +1,8 @@
-PATH=pwd
-virtualenv -p python3 $PATH/.pyoscopevenv
-source $PATH/.pyoscopevenv/bin/activate 
+#!/bin/bash
+mypath= pwd
+
+virtualenv -p python3 .pyoscvenv
+
+source .pyoscvenv/bin/activate 
 
 pip install -r deplist.md
