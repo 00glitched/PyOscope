@@ -39,7 +39,17 @@ void setup()
 
     for (uint8_t i = 0; i<SAMPLESIZE; i++)
       {
+        // sine
         signal[i] = AMP*sin(2*PI*i/SAMPLESIZE)+AMP;
+        
+        // saw
+        //signal[i] = AMP*i/SAMPLESIZE;
+
+        // square
+        //if (i < SAMPLESIZE>>1) { signal[i]=0; } else { signal[i]=AMP; }
+
+        // triangle
+        //signal[i] = abs(AMP*i/SAMPLESIZE - AMP>>1);
       }
   }
 
