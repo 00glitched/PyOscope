@@ -1,8 +1,9 @@
 // Generador de ondas de prueba
 //  VARS y CONST del programa
 const uint8_t PIN = 3;                // fast-pwm pin
+const uint8_t AMP = 127;              // amplitude
 const uint8_t SAMPLESIZE = 64;        // subdiv
-const uint8_t SAMPLERATE = 100000;    // uSec
+const uint8_t SAMPLERATE = 10000;     // uSec
 uint8_t signal[SAMPLESIZE];           // sample
 uint32_t timerSignal = SAMPLERATE;    // timer
 
@@ -38,7 +39,7 @@ void setup()
 
     for (uint8_t i = 0; i<SAMPLESIZE; i++)
       {
-        signal[i] = 64*sin(2*PI*i/SAMPLESIZE)+64;
+        signal[i] = AMP*sin(2*PI*i/SAMPLESIZE)+AMP;
       }
   }
 
