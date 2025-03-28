@@ -1,22 +1,21 @@
-
-
-
 clear;
+mega =10^( 6);
 kilo =10^( 3);
 mili =10^(-3);
 micro=10^(-6);
 nano =10^(-9);
+pico =10^(-12);
 
 
-time = 0.5*mili;    # input("Tiempo simulacion: ");
-h    = 1*micro;     # input("Subdiv simulacion: ");
+time = 500*micro;  # input("Tiempo simulacion: ");
+h    = 500*nano;    # input("Subdiv simulacion: ");
 bits = 8;           # input("Bits del PWM: ");
 Vhgh = 5;           # input("Vhgh del PWM: ");
-freq = 34*kilo;     # input("Freq del PWM: ");
+freq = 62*kilo;     # input("Freq del PWM: ");
 pwm  = 127;         # input("Val. del PWM: ");
-ord  = 2 ;          # input("Ord. del filtro RC: ");
-res  = 2*kilo;      # input("Res. del filtro RC: ");
-cap  = 20*nano;     # input("Cap. del filtro RC: ");
+ord  = 2;           # input("Ord. del filtro RC: ");
+res  = 1*kilo;      # input("Res. del filtro RC: ");
+cap  = 47*nano;     # input("Cap. del filtro RC: ");
 N = floor(time/h);
 
 V=zeros(ord+1,N+1);
