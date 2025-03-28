@@ -2,3 +2,4 @@
 .mypy_cache
 /module/__pycache__
 /module/.mypy_cache
+/testing/octave/octave-workspace
